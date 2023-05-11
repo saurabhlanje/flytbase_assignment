@@ -13,14 +13,8 @@ time.sleep(10)
 
 print ' going along the setpoints'
 drone.position_set(10, 0, 0, relative=True)
-time.sleep(1)
-
 drone.position_set(-5, 8.66, 0, relative=True)
-time.sleep(1)
-
 drone.position_set(-5,-8.66, 0, relative=True)
-time.sleep(1)
-
 
 print 'Landing'
 drone.land(async=False)
